@@ -137,7 +137,7 @@ export const ProductCard = ({ modalOpen }) => {
                 id="Size"
                 value={selectedProduct.size}
               >
-                <option value="0">- розмір/довжина -</option>
+                <option value="0">- розмір -</option>
                 {selectedProduct.sizes.map((size, index) => (
                   <option key={index} value={size}>
                     {size}

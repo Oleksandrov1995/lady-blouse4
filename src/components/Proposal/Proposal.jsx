@@ -13,9 +13,9 @@ export const Proposal = () => {
             alt="Дівчина в жилетці"
           />
           <p className="proposal-item-text">
-            3 моделі, 4 довжини,
+          Легко підібрати розмір
             <br />
-            Обирайте Ваш варіант
+            за рахунок вільного фасону
           </p>
         </li>
         <li className="proposal-item">
@@ -26,9 +26,9 @@ export const Proposal = () => {
             alt="Жилетка на вішаку"
           />
           <p className="proposal-item-text">
-            Якісні, практичні та
+          Приємна, практична та 
             <br />
-            ефектні матеріали
+            ефектна тканина
           </p>
         </li>
         <li className="proposal-item">
@@ -48,7 +48,7 @@ export const Proposal = () => {
       <div className="proposal-discount">
         <p className="proposal-discountPercent">-30%</p>
         <span className="proposal-discount-text">
-          На топову лінійку зимових та демісезонних пуховиків!
+        На топову лінійку базових оверсайз сорочкок весняного сезону!
         </span>
       </div>
       <h3 className="proposal-text">Пропозиція діє ще:</h3>
@@ -62,12 +62,12 @@ export const Proposal = () => {
           offset={-70}
           duration={500}
         >
-          Обрати куртку
+          Обрати сорочку
         </Link>
       </button>
       <p className="proposal-text">
         Залишилося <span style={{ background: '#ff671e' }}>17</span> штук по
-        акції. Встигніть замовити свій колір!
+        акції. Встигніть замовити свій розмір!
       </p>
     </section>
   );
