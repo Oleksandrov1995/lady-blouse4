@@ -86,12 +86,12 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
       setIsFailure(true);
       return;
     }
-    sendMessage(`Нова заявка! Хочу Куртку!!!
+    sendMessage(`Нова заявка! Хочу Сорочку!!!
       \nТовар: ${products.map(
         product => `${product.type};
         Розмір: ${product.size};
         Колір: ${product.color};
-        Кількість: (${product.quantity})-----0`
+        Кількість: (${product.quantity})-----`
       )}
       \nЗагальна сума: ${totalAmount}
       \nІм'я: ${name}
@@ -149,7 +149,7 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
                 <p className="shoppingList-productName">
                   Колір: {product.color || 'Не вибрано'}
                 </p>
-                <p className="shoppingList-productName">Розмір/Довжина: {product.size|| 'Не вибрано' }</p>
+                <p className="shoppingList-productName">Розмір: {product.size|| 'Не вибрано' }</p>
                
 
                 <p className="shoppingList-quantity">

@@ -93,199 +93,197 @@ export const productsTypeData = [
   </table>
   <p className='productSize-textAfter'>* розміри розраховані сидіти трохи вільно</p></div>),
   },
-  // {
-  //   id: 'practicalMidi',
-  //   imageSrc: require('../Images/products/practicalMidi/fiolet.jpg'),
-  //   type: 'Практичний Міді',
-  //   price: 1980,
-  //   todayPrice: 1386,
-  //   discount: 30,
-  //   aboutTitle:'Демісезонний пуффер середньої довжини з двома кишенями на застібках, подовженими трикотажними манжетами та високою горловиною стійка',
-  //   aboutText: (<div><p>- Наповнювач: аеропух; </p>
-  //   <p>- Матеріал: матова плащівка Gloria стійка до бруду, вологи та затирання;</p>
-  //   <p>- Підкладка: міцна та гладенька саржа;</p>
-  //   <p>- Висока горловина стійка відповідає трендам, захищає від холоду та додає комфорту;</p>
-  //   <p>- М'які та трішки подовжені манжети.</p></div>),
-    
+  {
+    id: 'over2',
+    imageSrc: require('../Images/products/over2/ower2WhiteFront.jpg'),
+    type: 'Over 2',
+    price: 939,
+    todayPrice: 657,
+    discount: 30,
+    aboutTitle:'Найелегантніша модель нашої лінійки. Може носитися як оверсайз, так і більш приталено, тому завдяки цьому може підійти під будь які типи фігури. Має дві кишені на грудях та розрізи по бокам, для зручності заправлення лише спереду та створення гарного образу. А опущена лінія плеча додасть до образу легкості та тендітності.',
+    aboutText: (<div><p>- Тканина: супер софт; </p>
+    <p>- Вільний крій з легким розширенням до низу; </p>
+    <p>- Made in Kharkiv. </p>
+    <p>Оплата: післяплатою при отриманні або повна оплата на реквізити!</p>
+    <p>Доставка: Новою поштою та Укрпоштою до відділення або кур'єром до адреси!</p></div>),
+    colors: [
+            '#ffffff',
+    ],
+    colorsImg: [
+      {
+        id: 'ower2WhiteSide',
+        img: require('../Images/products/over2/ower2WhiteSide.jpg'),
+        colorName: 'Білий',
+      },
+      {
+        id: 'ower2WhiteFront',
+        img: require('../Images/products/over2/ower2WhiteFront.jpg'),
+        colorName: 'Білий',
+      },
+      {
+        id: 'ower2WhiteBack',
+        img: require('../Images/products/over2/ower2WhiteBack.jpg'),
+        colorName: 'Білий',
+      },
      
-    
-   
-  //   colors: ['#a78ef3', '#f6e3e9', '#9bf8ff', '#1b1517', '#58b4a9', '#dfe7fe'],
-  //   colorsImg: [
-  //     {
-  //       id: 'pmBezevy',
-  //       img: require('../Images/products/practicalMidi/bezevy.jpg'),
-  //       colorName: 'Бежевий',
-  //     },
-  //     {
-  //       id: 'pmBiryzovy',
-  //       img: require('../Images/products/practicalMidi/biryzovy.jpg'),
-  //       colorName: 'Бірюзовий',
-  //     },
-  //     {
-  //       id: 'pmBlack',
-  //       img: require('../Images/products/practicalMidi/black.jpg'),
-  //       colorName: 'Чорний',
-  //     },
-  //     {
-  //       id: 'pmFiolet',
-  //       img: require('../Images/products/practicalMidi/fiolet.jpg'),
-  //       colorName: 'Фіолетовий',
-  //     },
-  //     {
-  //       id: 'pmGreen',
-  //       img: require('../Images/products/practicalMidi/green.jpg'),
-  //       colorName: 'Зелений',
-  //     },
-  //     {
-  //       id: 'pmWhite',
-  //       img: require('../Images/products/practicalMidi/white.jpg'),
-  //       colorName: 'Білий',
-  //     },
-  //   ],
-  //   sizes:["42-46/73","48-50/74"],
-  //   sizeTable:(<div><table className='productSize-table'>
-  //   <thead>
-  //     <tr>
-  //       <th>Заміри</th>
-  //       <th>Розмір 42-46</th>
-  //       <th>Розмір 48-50</th>
-  //     </tr>
-  //   </thead>
-  //   <tbody>
-  //     <tr>
-  //       <td>Ваш ОГ, см</td>
-  //       <td>88-106</td>
-  //       <td>104-122</td>
-  //     </tr>
-  //     <tr>
-  //       <td>Напів ОГ виробу, см</td>
-  //       <td>65</td>
-  //       <td>69</td>
-  //     </tr>
-  //     <tr>
-  //       <td>Довжина, см</td>
-  //       <td>73</td>
-  //       <td>74</td>
-  //     </tr>
-  //     <tr>
-  //       <td>Рукав, см</td>
-  //       <td>78</td>
-  //       <td>78</td>
-  //     </tr>
-  //     <tr>
-  //       <td>Манжет, см</td>
-  //       <td>9</td>
-  //       <td>9</td>
-  //     </tr>
-  //   </tbody>
-  // </table></div>),
-  // },
-  // {
-  //   id: 'warmMaxi',
-  //   imageSrc: require('../Images/products/warmMaxi/pink.jpeg'),
-  //   type: 'Теплий Максі',
-  //   price: 3989,
-  //   todayPrice: 2792,
-  //   discount: 30,
-  //   aboutTitle:'Стильний, якісний та комфортний великий пуффер в двох варіантах довжини',
-  //   aboutText:(<div><p>- 120 см та 100 см (обирайте довжину при виборі розміру);</p>
-  //   <p>- Наповнювач: набивний аеропух;</p>
-  //   <p>- Плащівка матова та стійка до бруду і вологи ;</p>
-  //   <p>- Підкладка міцна та гладенька саржа;</p>
-  //   <p>- Великий відстібний капюшон що заховає від неочікуваного дощу мінливої погоди🥰;</p>
-  //   <p>- М'які та теплі манжети завдяки яким можна регулювати довжину рукава.</p></div>),
-  //   colors: [
-  //     '#ee2164',
-  //     '#c1ae9f',
-  //     '#5accd7',
-  //     '#03030f',
-  //     '#baa3f1',
-  //     '#104e59',
-  //     '#a2cb2d',
-  //     '#c2d1ce',
-  //     '#faf9ff',
-  //     '#fcf823',
-  //   ],
-  //   colorsImg: [
-  //     {
-  //       id: 'wmBezevy',
-  //       img: require('../Images/products/warmMaxi/bezevy.jpeg'),
-  //       colorName: 'Бежевий',
-  //     },
-  //     {
-  //       id: 'wmBiryzovy',
-  //       img: require('../Images/products/warmMaxi/biryzovy.jpeg'),
-  //       colorName: 'Бірюзовий',
-  //     },
-  //     {
-  //       id: 'wmBlack',
-  //       img: require('../Images/products/warmMaxi/black.jpeg'),
-  //       colorName: 'Чорний',
-  //     },
-  //     {
-  //       id: 'wmFiolet',
-  //       img: require('../Images/products/warmMaxi/fiolet.jpeg'),
-  //       colorName: 'Фіолетовий',
-  //     },
-  //     {
-  //       id: 'wmGreen',
-  //       img: require('../Images/products/warmMaxi/green.jpeg'),
-  //       colorName: 'Зелений',
-  //     },
-  //     {
-  //       id: 'wmLaym',
-  //       img: require('../Images/products/warmMaxi/laym.jpeg'),
-  //       colorName: 'Лаймовий',
-  //     },
-  //     {
-  //       id: 'wmMint',
-  //       img: require('../Images/products/warmMaxi/mint.jpeg'),
-  //       colorName: 'М`ятний',
-  //     },
-  //     {
-  //       id: 'wmPink',
-  //       img: require('../Images/products/warmMaxi/pink.jpeg'),
-  //       colorName: 'Рожевий',
-  //     },
-  //     {
-  //       id: 'wmWhite',
-  //       img: require('../Images/products/warmMaxi/white.jpeg'),
-  //       colorName: 'Білий',
-  //     },
-  //     {
-  //       id: 'wmYellow',
-  //       img: require('../Images/products/warmMaxi/yellow.jpeg'),
-  //       colorName: 'Жовтий',
-  //     },
-  //   ],
-  //   sizes:["42-46/100","42-46/120","48-50/100","48-50/120","52-54/100","52-54/120"],
-  //   sizeTable:(<div> <table className='productSize-table'>
-  //   <thead>
-  //     <tr>
-  //       <th>Розмір</th>
-  //       <th>Обхват грудей, см</th>
-  //       <th>Довжина, см</th>
-  //     </tr>
-  //   </thead>
-  //   <tbody>
-  //     <tr>
-  //       <td>42-46</td>
-  //       <td>88-108</td>
-  //       <td>100\120</td>
-  //     </tr>
-  //     <tr>
-  //       <td>48-50</td>
-  //       <td>106-116</td>
-  //       <td>100\120</td>
-  //     </tr>
-  //     <tr>
-  //       <td>52-54</td>
-  //       <td>114-124</td>
-  //       <td>100\120</td>
-  //     </tr>
-  //   </tbody>
-  // </table>
-  // <p>*  Розмір 52-54 доступний під замовлення з доплатою 210 грн, термін виробництва 5 робочих днів, потім доставка 1-3 дні. Також можете залишити заявку і уточнити наявність розміру.</p></div>),
-  // },
+        ],
+    sizes:["42-44","46-48","50-52","54-56"],
+    sizeTable:(<div> <table className='productSize-table'>
+    <thead>
+      <tr>
+      <th>Заміри</th>
+      <th>Обхват грудей виробу</th>
+      <th>Ваш обхват грудей</th>
+        <th>Довжина по переду</th>
+        <th>Довжина по спині</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Розмір 42-44</td>
+        <td>108 см</td>
+        <td>88-105 см</td>
+        <td>66 см</td>
+        <td>72 см</td>
+        
+      </tr>
+      <tr>
+        <td>Розмір 46-48</td>
+        <td>114 см</td>
+        <td>106-111 см</td>
+        <td>68 см</td>
+        <td>74 см</td>
+      </tr>
+      <tr>
+        <td>Розмір 50-52</td>
+        <td>120 см</td>
+        <td>112-118 см</td>
+        <td>70 см</td>
+        <td>76 см</td>
+        </tr>
+      <tr>
+        <td>Розмір 54-56</td>
+        <td>128 см</td>
+        <td>117-125 см</td>
+        <td>72 см</td>
+        <td>76 см</td>        
+      </tr>
+     
+        </tbody>
+  </table>
+  </div>),
+  },
+  {
+    id: 'lastivka',
+    imageSrc: require('../Images/products/lastivka/lastivkaBlueBack.JPG'),
+    type: 'Ластівка',
+    price: 970,
+    todayPrice: 679,
+    discount: 30,
+    aboutTitle:'Найоригінальніша модель нашої лінійки. Може носитися як оверсайз, так і приталено. Позаду має подовжену спинку з розрізом на рівні стегон, для комфортного та вільного носіння без відчуття стиснення в стегнах. Має одну кишеню зліва на грудях, приспущен лінію плеча та гудзики на спинці, для регулювання довжини розрізу.',
+    aboutText: (<div><p>- Тканина: супер софт; </p>
+    <p>- Вільний крій з розширенням до низу; </p>
+    <p>- Made in Kharkiv. </p>
+    <p>Оплата: післяплатою при отриманні або повна оплата на реквізити!</p>
+    <p>Доставка: Новою поштою та Укрпоштою до відділення або кур'єром до адреси!</p></div>),
+    colors: [
+            '#ffffff',
+            '#000000',
+            '#a2bbd9'
+    ],
+    colorsImg: [
+      {
+        id: 'lastivkaBlueBack',
+        img: require('../Images/products/lastivka/lastivkaBlueBack.JPG'),
+        colorName: 'Блакитний',
+      },
+      {
+        id: 'lastivkaWhiteFront',
+        img: require('../Images/products/lastivka/lastivkaWhiteFront.jpg'),
+        colorName: 'Білий',
+      },
+      {
+        id: 'ower2WhiteBack',
+        img: require('../Images/products/lastivka/lastivkaBlackSide.jpg'),
+        colorName: 'Чорний',
+      },
+      {
+        id: 'lastivkaBlueFront',
+        img: require('../Images/products/lastivka/lastivkaBlueFront.JPG'),
+        colorName: 'Блакитний',
+      },
+      {
+        id: 'lastivkaWhiteBack',
+        img: require('../Images/products/lastivka/lastivkaWhiteBack.jpg'),
+        colorName: 'Білий',
+      },
+      {
+        id: 'lastivkaBlackFront',
+        img: require('../Images/products/lastivka/lastivkaBlackFront.jpg'),
+        colorName: 'Чорний',
+      },
+      {
+        id: 'lastivkaBlue',
+        img: require('../Images/products/lastivka/lastivkaBlue.JPG'),
+        colorName: 'Блакитний',
+      },
+      {
+        id: 'lastivkaWhiteFront2',
+        img: require('../Images/products/lastivka/lastivkaWhiteFront2.jpg'),
+        colorName: 'Білий',
+      },
+      {
+        id: 'lastivkaBlackFront2',
+        img: require('../Images/products/lastivka/lastivkaBlackFront2.jpg'),
+        colorName: 'Чорний',
+      },
+     
+        ],
+    sizes:["42-44","46-48","50-52","54-56"],
+    sizeTable:(<div> <table className='productSize-table'>
+    <thead>
+      <tr>
+      <th>Заміри</th>
+      <th>Обхват грудей виробу</th>
+      <th>Ваш обхват грудей</th>
+        <th>Довжина по переду</th>
+        <th>Довжина по спині</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Розмір 42-44</td>
+        <td>110 см</td>
+        <td>88-108 см</td>
+        <td>68 см</td>
+        <td>78 см</td>
+        
+      </tr>
+      <tr>
+        <td>Розмір 46-48</td>
+        <td>118 см</td>
+        <td>106-116 см</td>
+        <td>70 см</td>
+        <td>80 см</td>
+      </tr>
+      <tr>
+        <td>Розмір 50-52</td>
+        <td>126 см</td>
+        <td>114-124 см</td>
+        <td>72 см</td>
+        <td>82 см</td>
+        </tr>
+      <tr>
+        <td>Розмір 54-56</td>
+        <td>134 см</td>
+        <td>122-130 см</td>
+        <td>74 см</td>
+        <td>82 см</td>        
+      </tr>
+     
+        </tbody>
+  </table>
+  </div>),
+  },
+ 
 ];

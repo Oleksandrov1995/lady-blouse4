@@ -37,9 +37,7 @@ export const ProductCard = ({ modalOpen }) => {
     setProductColor(selectedColor);
   };
   let price = selectedProduct.todayPrice;
-  if (productSize === '52-54/100' || productSize === '52-54/120') {
-    price += 210;
-  }
+
   const handleAddPRoduct = () => {
     const productToAdd = {
       id: `${selectedProduct.id}-${productColor.id}-${productSize}`,
@@ -77,7 +75,7 @@ export const ProductCard = ({ modalOpen }) => {
         <Link className="backLink" to={`/`}>
         <ArrowBackIcon fontSize="large" />
       </Link>
-        <h3 className="productType">Куртка "{selectedProduct.type}"</h3>
+        <h3 className="productType">Сорочка "{selectedProduct.type}"</h3>
 
         <Swiper
           spaceBetween={30}
@@ -109,24 +107,29 @@ export const ProductCard = ({ modalOpen }) => {
           Ціна сьогодні:<span className="price">{selectedProduct?.price} грн</span><span className="todayPrice">{price} грн</span>
         </p>
         <div className="productOptions">
-          {selectedProduct && (
-            <div className='productCardContainer'>
-              <label htmlFor="Size">Оберіть колір:</label>
-              <select
-                className="optionSelect"
-                onChange={handleColorChange}
-                id="Color"
-                value={selectedProduct.colorsImg.colorName}
-              >
-                <option value="0">- колір -</option>
-                {selectedProduct.colorsImg.map(color => (
-                  <option key={color.id} value={color.id}>
-                    {color.colorName}
-                  </option>
-                ))}
-              </select>
-            </div>
-          )}
+        {selectedProduct && (
+  <div className='productCardContainer'>
+    <label htmlFor="Size">Оберіть колір:</label>
+    <select
+      className="optionSelect"
+      onChange={handleColorChange}
+      id="Color"
+      value={selectedProduct.colorsImg.colorName}
+    >
+      <option value="0">- колір -</option>
+      {selectedProduct.colorsImg.reduce((uniqueColors, color) => {
+        if (!uniqueColors.find(c => c.colorName === color.colorName)) {
+          uniqueColors.push(color);
+        }
+        return uniqueColors;
+      }, []).map(color => (
+        <option key={color.id} value={color.id}>
+          {color.colorName}
+        </option>
+      ))}
+    </select>
+  </div>
+)}
 
           {selectedProduct && (
             <div>

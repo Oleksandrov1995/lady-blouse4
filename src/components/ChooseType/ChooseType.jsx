@@ -5,7 +5,7 @@ export const ChooseType = () => {
 
   return (
     <section id="chooseColor" className="product">
-      <h2>Обери свою куртку</h2>
+      <h2>Обери свою сорочку</h2>
       <ul className="product-list">
         {productsTypeData.map(product => (
           <li className="product-item" key={product.id}>
@@ -28,7 +28,7 @@ export const ChooseType = () => {
             
            
             <Link className="product-link" to={`/product/${product.id}`} >
-             Обрати колір
+            Детальніше
             </Link>
            
           </li>
