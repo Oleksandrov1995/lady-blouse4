@@ -29,6 +29,7 @@ padding-bottom: 50px;
 }
 .main-title{
     text-transform: uppercase;
+    padding: 0 10px;
 }
 .title{
     font-style: italic;

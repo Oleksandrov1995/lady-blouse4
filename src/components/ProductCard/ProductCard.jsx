@@ -9,6 +9,7 @@ import './ProductCard.css';
 import * as React from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { productsTypeData } from 'data/productsTypeData';
+import CountTimeDown from '../CountTimeDown/CountTimeDown'
 
 export const ProductCard = ({ modalOpen }) => {
  
@@ -80,11 +81,11 @@ export const ProductCard = ({ modalOpen }) => {
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
+          
           pagination={{
             clickable: true,
           }}
-         
-          navigation={true}
+         navigation={true}
           loop={true}
           modules={[Autoplay, Navigation]}
           className="productCardSwiper"
@@ -165,9 +166,22 @@ export const ProductCard = ({ modalOpen }) => {
         <p className="sizeTitle">Заміри виробу</p>
         <div>{selectedProduct?.sizeTable}</div>
         </div>
-        <button className="productCardButton" onClick={handleAddPRoduct}>
+        <div className="proposal-discount">
+        <p className="proposal-discountPercent">-30%</p>
+        <span className="proposal-discount-text">
+        На топову лінійку базових оверсайз сорочкок весняного сезону!
+        </span>
+      </div>
+      <h3 className="proposal-text">Пропозиція діє ще:</h3>
+      <CountTimeDown />
+      <button className="productCardButton" onClick={handleAddPRoduct}>
           Оформити замовлення
         </button>
+      <p className="proposal-text">
+        Залишилося <span style={{ background: '#ff671e' }}>17</span> штук по
+        акції. Встигніть замовити свій розмір!
+      </p>
+       
       </div>
     
   );

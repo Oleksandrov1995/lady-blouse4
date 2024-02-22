@@ -3,7 +3,7 @@ export const productsTypeData = [
     id: 'classic',
     imageSrc: require('../Images/products/classic/classicBlack.jpg'),
     type: 'Класік',
-    price: 542,
+    price: 842,
     todayPrice: 589,
     discount: 30,
     aboutTitle:'Найактуальніша модель серед прихильників класичного стилю. Прямий крій сорочки відповідає сучасним трендам і спрощує підбір розміру, оскільки добре виглядає на всіх типах фігури. Ґудзики приховані під планкою для надання аккуратності та лаконічності до образу.',

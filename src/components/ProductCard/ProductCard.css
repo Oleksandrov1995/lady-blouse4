@@ -16,12 +16,18 @@
 .productCardSwiper {
   margin-top: 45px;
  }
-.swiper-button-next, 
-.swiper-button-prev {
+ 
+ .swiper-button-next, .swiper-button-prev {
   color: #ff671e;
-  font-size: 14px;
-  width: 10px;
+     
 }
+.swiper-button-prev { 
+  left: var(--swiper-navigation-sides-offset,7%);}
+  .swiper-button-next{
+      right:  var(--swiper-navigation-sides-offset,7%) 
+  }
+
+
 .productCardSwiperColor {
   display: block;
   margin-left: auto;
@@ -124,10 +130,15 @@ td {
   border: 1px solid #ddd;
 }
 
+
 @media only screen and (min-width: 1020px) {
   .modalBox {
     width: 620px;
 
     padding: 30px 30px 40px 30px;
+  }
+  .sizesTable{
+  
+    margin-bottom: 90px;
   }
 }

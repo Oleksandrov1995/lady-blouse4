@@ -28,6 +28,7 @@ export const Reviews = () => {
           clickable: true,
         }}
         navigation={true}
+        loop={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >

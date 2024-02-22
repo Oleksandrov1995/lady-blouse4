@@ -5,7 +5,14 @@
 }
 .swiper-button-next, .swiper-button-prev {
     color: #ff671e;
+       
   }
+  .swiper-button-prev { 
+    left: var(--swiper-navigation-sides-offset,7%);}
+    .swiper-button-next{
+        right:  var(--swiper-navigation-sides-offset,7%) 
+    }
+
 .reviews-title{
     margin-bottom: 70px;
 }
