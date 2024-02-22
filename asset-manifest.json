@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lady-blouse4/static/css/main.be02be89.css",
-    "main.js": "/lady-blouse4/static/js/main.14472a9c.js",
+    "main.css": "/lady-blouse4/static/css/main.2b7650de.css",
+    "main.js": "/lady-blouse4/static/js/main.793e7ea0.js",
     "static/media/classicBlue.jpg": "/lady-blouse4/static/media/classicBlue.591a6fca849fb942eaf0.jpg",
     "static/media/proposal3.jpg": "/lady-blouse4/static/media/proposal3.494605d19e0124e3acde.jpg",
     "static/media/proposal1.jpg": "/lady-blouse4/static/media/proposal1.443649c831659f1daec1.jpg",
@@ -46,11 +46,11 @@
     "static/media/logo2.png": "/lady-blouse4/static/media/logo2.cd68e7d88b5525f51a59.png",
     "static/media/logo1.jpg": "/lady-blouse4/static/media/logo1.051c716fd5532611781a.jpg",
     "index.html": "/lady-blouse4/index.html",
-    "main.be02be89.css.map": "/lady-blouse4/static/css/main.be02be89.css.map",
-    "main.14472a9c.js.map": "/lady-blouse4/static/js/main.14472a9c.js.map"
+    "main.2b7650de.css.map": "/lady-blouse4/static/css/main.2b7650de.css.map",
+    "main.793e7ea0.js.map": "/lady-blouse4/static/js/main.793e7ea0.js.map"
   },
   "entrypoints": [
-    "static/css/main.be02be89.css",
-    "static/js/main.14472a9c.js"
+    "static/css/main.2b7650de.css",
+    "static/js/main.793e7ea0.js"
   ]
 }
