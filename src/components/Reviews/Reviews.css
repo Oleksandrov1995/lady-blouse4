@@ -8,9 +8,16 @@
        
   }
   .swiper-button-prev { 
-    left: var(--swiper-navigation-sides-offset,7%);}
+
+    left: var(--swiper-navigation-sides-offset,7px);}
     .swiper-button-next{
-        right:  var(--swiper-navigation-sides-offset,7%) 
+        right:  var(--swiper-navigation-sides-offset,7px) 
+    }
+    .swiper-button-prev:after{
+        font-size: 28px;
+    }
+    .swiper-button-next:after{
+        font-size: 28px;
     }
 
 .reviews-title{
@@ -31,8 +38,23 @@ margin: 0 auto 40px auto;
     background-color: #f5c231;
     font-size: 26px;
     font-weight: bold;}
+    @media only screen and (min-width: 600px) {
+        .swiper-button-prev { 
+            left: var(--swiper-navigation-sides-offset,20%);}
+            .swiper-button-next{
+                right:  var(--swiper-navigation-sides-offset,20%) 
+            }
+            .swiper-button-prev:after{
+                font-size: 44px;
+            }
+            .swiper-button-next:after{
+                font-size: 44px;
+            }
+    }
+
     @media only screen and (min-width: 1020px) {
         .reviews-img{
             max-width: 400px;
         }
+        
     }
