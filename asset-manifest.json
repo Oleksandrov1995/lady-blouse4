@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lady-blouse4/static/css/main.5cb3b431.css",
-    "main.js": "/lady-blouse4/static/js/main.793e7ea0.js",
+    "main.css": "/lady-blouse4/static/css/main.9918c45e.css",
+    "main.js": "/lady-blouse4/static/js/main.770f320d.js",
     "static/media/classicBlue.jpg": "/lady-blouse4/static/media/classicBlue.591a6fca849fb942eaf0.jpg",
     "static/media/proposal3.jpg": "/lady-blouse4/static/media/proposal3.494605d19e0124e3acde.jpg",
     "static/media/proposal1.jpg": "/lady-blouse4/static/media/proposal1.443649c831659f1daec1.jpg",
@@ -25,14 +25,16 @@
     "static/media/lastivkaWhiteFront.jpg": "/lady-blouse4/static/media/lastivkaWhiteFront.0dc2b93879a7c8b1fedc.jpg",
     "static/media/lastivkaBlackSide.jpg": "/lady-blouse4/static/media/lastivkaBlackSide.9bebfdc89a604b7df8c6.jpg",
     "static/media/lastivkaBlue.JPG": "/lady-blouse4/static/media/lastivkaBlue.77fb624aee01ff54469b.JPG",
+    "static/media/discount30.png": "/lady-blouse4/static/media/discount30.305ab62bf9862d036971.png",
     "static/media/lastivkaBlueBack.JPG": "/lady-blouse4/static/media/lastivkaBlueBack.a8b46348e045a71fce27.JPG",
-    "static/media/discount30.png": "/lady-blouse4/static/media/discount30.7f383ec49bf6abf04701.png",
     "static/media/reviews6.jpg": "/lady-blouse4/static/media/reviews6.29374c89e20eba906d1d.jpg",
     "static/media/aboutProduct4.jpg": "/lady-blouse4/static/media/aboutProduct4.02bf8063c733e1991309.jpg",
     "static/media/reviews9.jpg": "/lady-blouse4/static/media/reviews9.2d77050a346b1687ec4e.jpg",
     "static/media/reviews11.jpg": "/lady-blouse4/static/media/reviews11.e902c83774eb8b92d393.jpg",
     "static/media/prices1.png": "/lady-blouse4/static/media/prices1.cd34c741d7ff36c64404.png",
+    "static/media/proposal1Lastivka.jpg": "/lady-blouse4/static/media/proposal1Lastivka.0f3b8dae547356d31a44.jpg",
     "static/media/reviews1.jpg": "/lady-blouse4/static/media/reviews1.3e066d4f4b9b387ab02b.jpg",
+    "static/media/proposal3Lastivka.jpg": "/lady-blouse4/static/media/proposal3Lastivka.ec41ec2919bbbe386f24.jpg",
     "static/media/reviews2.jpg": "/lady-blouse4/static/media/reviews2.549587160bcc20c79568.jpg",
     "static/media/reviews13.jpg": "/lady-blouse4/static/media/reviews13.4950407b3fdaeb4d6bbf.jpg",
     "static/media/reviews10.jpg": "/lady-blouse4/static/media/reviews10.86d1f8dd3c40f591e288.jpg",
@@ -43,14 +45,17 @@
     "static/media/reviews8.jpg": "/lady-blouse4/static/media/reviews8.f5a0a694b90bd2f3e40b.jpg",
     "static/media/reviews4.jpg": "/lady-blouse4/static/media/reviews4.2e4807c27d3f088bee27.jpg",
     "static/media/aboutProduct1.jpg": "/lady-blouse4/static/media/aboutProduct1.96abf668b53f6219cd15.jpg",
+    "static/media/prices1Lastivka.png": "/lady-blouse4/static/media/prices1Lastivka.fccdb3efa2b2605fe913.png",
+    "static/media/mainImageLastivka.jpg": "/lady-blouse4/static/media/mainImageLastivka.cdd4ee4a848ef9857477.jpg",
     "static/media/logo2.png": "/lady-blouse4/static/media/logo2.cd68e7d88b5525f51a59.png",
     "static/media/logo1.jpg": "/lady-blouse4/static/media/logo1.051c716fd5532611781a.jpg",
+    "static/media/proposal2Lastivka.jpg": "/lady-blouse4/static/media/proposal2Lastivka.54828b83ff68bae5cd31.jpg",
     "index.html": "/lady-blouse4/index.html",
-    "main.5cb3b431.css.map": "/lady-blouse4/static/css/main.5cb3b431.css.map",
-    "main.793e7ea0.js.map": "/lady-blouse4/static/js/main.793e7ea0.js.map"
+    "main.9918c45e.css.map": "/lady-blouse4/static/css/main.9918c45e.css.map",
+    "main.770f320d.js.map": "/lady-blouse4/static/js/main.770f320d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cb3b431.css",
-    "static/js/main.793e7ea0.js"
+    "static/css/main.9918c45e.css",
+    "static/js/main.770f320d.js"
   ]
 }
