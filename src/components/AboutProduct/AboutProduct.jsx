@@ -7,7 +7,7 @@ export const AboutProduct = () => {
         <li className='aboutProduct-item item-color'>
           <img className='about-img' src={require('../../Images/aboutProduct1.jpg')}alt="Жилетка на вішаку" />
           <h4 className='aboutProduct-listTitle'>Лекала</h4>
-          <p className='aboutProduct-listText'>Продумана конструкція виробів та розмірів за для зручності на будь яких парамтрех та стильного силуету .</p>
+          <p className='aboutProduct-listText'>Продумана конструкція виробів та розмірів за для зручності на будь яких параметрах та стильного силуету .</p>
         </li>
         <li className='aboutProduct-item'>
           <img className='about-img' src={require('../../Images/aboutProduct2.jpg')} alt="Дівчина в жилетці" />

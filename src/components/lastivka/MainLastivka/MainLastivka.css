@@ -1,0 +1,68 @@
+.main-containerLastivka {
+    display: flex;
+    background-image: url('../../../Images/lastivka/mainImageLastivka.jpg');
+    background-size: cover; 
+   
+    background-position: center;
+    height: 140px;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 50px;
+}
+.main-discountLastivka{
+    position: absolute;
+    width: 40px;
+    right: 2.8%;
+}
+.main-titlesLastivka{
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 15px;
+     text-align: center;
+     margin-top: 250px;
+     font-size: 12px;
+     line-height: 37px;
+}
+.main-titleLastivka{
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.titleLastivka{
+    font-style: italic;
+}
+.main-benefitsLastivka{
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-logoLastivka{
+    position: absolute;
+    max-width: 100px;
+    border-radius: 50%;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 50%);
+}
+@media only screen and (min-width: 1020px) {
+    .main-containerLastivka{ height: 434px;}
+    .main-titlesLastivka{padding-bottom: 50px;
+    margin-top: 175px;
+    font-size: 15px;}
+    .main-discountLastivka{
+     
+        width: 100px;
+      
+    }
+    .main-benefitsLastivka{
+               flex-direction: row;
+               gap: 25px;
+              justify-content: center;
+    }
+.main-logoLastivka{
+    max-width: 200px;
+}
+}

@@ -1,4 +1,5 @@
 import "./Contacts.css"
+import { Link } from "react-router-dom";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
@@ -23,7 +24,7 @@ export const Contacts = () => {
                
                 <a href="tel:+380961111111" 
                   > <LocalPhoneIcon sx={{ fontSize: 15 }}/>
-                  : +38 099 718 16 62</a
+                  : +38 093 413 91 95</a
                 >
               </li>
             </ul>
@@ -43,7 +44,9 @@ export const Contacts = () => {
                 </li>
               
               </ul>
-
+              <Link className="agreement-link" to={`/agreement`} >
+           Політика конфіденційності
+            </Link>
         </section>
     )
 }

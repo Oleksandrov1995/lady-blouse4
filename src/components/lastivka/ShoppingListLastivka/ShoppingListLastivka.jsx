@@ -1,4 +1,4 @@
-import './ShoppingList.css';
+import './ShoppingListLastivka.css';
 
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -10,10 +10,9 @@ import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { sendMessage } from 'utilities/sendMessage';
-import { Link } from 'react-router-dom';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-export const ShoppingList = ({ modalOpen, modalClose }) => {
+
+export const ShoppingListLastivka = ({ modalOpen, modalClose }) => {
   const [products, setProducts] = useState([]);
 
   const [name, setName] = useState('');
@@ -25,6 +24,7 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
   const [question, setQuestion] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const [isFailure, setIsFailure] = useState(false);
+  const [selectedSizes, setSelectedSizes] = useState({});
 
   useEffect(() => {
     const products = JSON.parse(localStorage.getItem('products'));
@@ -33,6 +33,7 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
       setProducts(products);
     }
   }, [modalOpen]);
+
 
   useEffect(() => {
     if (isSuccess) {
@@ -47,26 +48,52 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
       setTimeout(() => setIsFailure(false), 4000);
     }
   }, [isFailure]);
+  
 
-  const handleDeleteProduct = productId => {
-    const updatedProducts = products.filter(
-      product => product.id !== productId
-    );
-    return setProducts(updatedProducts);
+  const handleDeleteProduct = (productId, productSize) => {
+    const updatedProducts = products.map(product => {
+      if (product.id === productId && product.size === productSize) {
+        return null;
+      }
+    
+      return product;
+    }).filter(Boolean);
+    setProducts(updatedProducts);
   };
+  
 
-  const handleAddToCart = productId => {
+  const handleSizeChange = (productId, productSize, selectedSize) => {
+    
+    const updatedSelectedSizes = {
+      ...selectedSizes,
+      [productId]: selectedSize
+    };
+    setSelectedSizes(updatedSelectedSizes);
+    
+    const updatedProducts = products.map(product => {
+      if (product.id === productId && product.size === productSize) {
+        return { ...product, size: selectedSize };
+      }
+      return product;
+    });
+    setProducts(updatedProducts);
+  };
+  
+
+  const handleAddToCart = (productId, productSize) => {
     const updatedProducts = products.map(product =>
-      product.id === productId
+      product.id === productId && product.size === productSize
         ? { ...product, quantity: (product.quantity || 1) + 1 }
         : product
     );
     setProducts(updatedProducts);
   };
-  const handleRemoveFromCart = productId => {
+
+
+  const handleRemoveFromCart = (productId, productSize) => {
     const updatedProducts = products
       .map(product =>
-        product.id === productId
+        product.id === productId && product.size === productSize
           ? { ...product, quantity: Math.max((product.quantity || 0) - 1, 0) }
           : product
       )
@@ -74,25 +101,24 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
 
     return setProducts(updatedProducts);
   };
-  const totalAmount = products.reduce((total, product) => {
-    const productTotal = (product.price || 0) * (product.quantity || 1);
-    return total + productTotal;
-  }, 0);
 
+ const totalAmount = products.reduce((total, product) => {
+  let productTotal = (product.todayPrice || 0) * (product.quantity || 1);
+
+ 
+
+  return total + productTotal;
+}, 0);
   const handleFormSubmit = async e => {
     e.preventDefault();
     const phoneRegex = /^\d{10,12}$/;
-
     if (!phoneRegex.test(phone)) {
       setIsFailure(true);
       return;
     }
-    sendMessage(`Нова заявка! Хочу Сорочку!!!
+    sendMessage(`Нова заявка! Хочу Сорочку ЛАСТІВКА!!!
       \nТовар: ${products.map(
-        product => `${product.type};
-        Розмір: ${product.size};
-        Колір: ${product.color};
-        Кількість: (${product.quantity})-----`
+        product => `${product.color} ${product.size} (${product.quantity})`
       )}
       \nЗагальна сума: ${totalAmount}
       \nІм'я: ${name}
@@ -132,26 +158,33 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
         className={'modal'}
       >
         <Box className={'modalBox'}>
-        <Link className="modalLink" to={`/`}>
-        <ArrowBackIcon fontSize="small" onClick={handleModalClose} />
-        <p className="modalLinkText">на головну</p>
-      </Link>
           <AiOutlineCloseCircle
             size={30}
             onClick={handleModalClose}
             className="modalButtonClose"
           />
-          
           <h2 className="shoppingList-title">Ваше замовлення:</h2>
           {products &&
             products.map(product => (
-              <div key={product.id} className="shoppingList-product">
-            <p className="shoppingList-productName">Куртка "{product.type}"</p>
+              <div key={product.id+product.size} className="shoppingList-product">
+             
                 <p className="shoppingList-productName">
-                  Колір: {product.color || 'Не вибрано'}
+                  Колір сорочки: {product.color}
                 </p>
-                <p className="shoppingList-productName">Розмір: {product.size|| 'Не вибрано' }</p>
-               
+                <form className='modalSelectSize'>
+                <label  htmlFor="Size" >Розмір:</label>
+                <select className='modalSelect'
+                  id="Size"
+                  value={product.size}
+                  onChange={(e) => handleSizeChange(product.id, product.size, e.target.value)}
+                >
+                  <option value="0">- розмір -</option>
+                  <option value="42-44">42-44</option>
+                  <option value="46-48">46-48</option>
+                  <option value="50-52">50-52</option>
+                  <option value="54-56">54-56</option>
+                </select>
+                </form>
 
                 <p className="shoppingList-quantity">
                   Кількість:
@@ -161,12 +194,12 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
                   {product.quantity || 1}{' '}
                   <AddCircleIcon onClick={() => handleAddToCart(product.id,product.size)} />
                   <span className="shoppingList-productPrice">
-                  {product.price * (product.quantity || 1)} грн.
+                  {  (product.todayPrice * (product.quantity || 1))} грн.
 
                   </span>
                   <DeleteOutlineIcon
                     className="shoppingList-deleteIcon"
-                    onClick={() => handleDeleteProduct(product.id)}
+                    onClick={() => handleDeleteProduct(product.id, product.size)}
                   />
                 </p>
               </div>
@@ -191,7 +224,6 @@ export const ShoppingList = ({ modalOpen, modalClose }) => {
               <li>
                 <label>
                   Телефон
-                
                   <input
                     className="shoppingList-formInput"
                     type="tel"

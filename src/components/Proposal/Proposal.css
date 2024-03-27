@@ -40,7 +40,6 @@
   background-position: center;
   margin: 100px auto 50px auto;
   min-height: 80px;
-  width: 320px;
   text-align: center;
 }
 .proposal-discountPercent {
@@ -48,7 +47,7 @@
   font-size: 80px;
   font-style: oblique;
   color: #67080a;
-  transform: translate(40%, -65%);
+  transform: translate(60%, -65%);
 }
 .proposal-discount-text {
   display: inline-block;
